@@ -1,14 +1,15 @@
 {% load static tailwind_tags %}
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mr-2">
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:flex md:flex-col md:justify-between md:h-full md:mr-2">
     <a href="">
-        <img class="rounded-t-lg" src="{% static 'img/index/1.jpg' %}" alt="" />
+        <img class="rounded-t-lg md:h-64 md:w-full" src="{% static 'img/index/1.jpg' %}" alt="" />
     </a>
     <div class="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cambio de Nombre a Imagenes</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cambio de Nombre a Imágenes</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Herramienta Diseniada por Creative Ferrets para el cambio de nombre masivo a las imagenes agrega el nombre que llevaran las imagenes y selecciona la carpeta y pronto se descargara un zip con las imagenes renombradas.</p>
-        <a href="{% url 'cambioNombre' %}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:max-h-[10rem]">Herramienta Diseñada por Creative Ferrets para el cambio de nombre masivo a las imágenes. Agrega el nombre que llevarán las imágenes y selecciona la carpeta, y pronto se descargará un zip con las imágenes renombradas.</p>
+        <a href="{% url 'cambioNombre' %}" class="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Usar Herramienta
             <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -17,16 +18,16 @@
     </div>
 </div>
 
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:flex md:flex-col md:justify-between md:h-full">
     <a href="#">
-        <img class="rounded-t-lg" src="{% static 'img/index/1.jpg' %}" alt="" />
+        <img class="rounded-t-lg md:h-64 md:w-full" src="{% static 'img/index/1.jpg' %}" alt="" />
     </a>
     <div class="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Reductor de Tamanio de Imagenes</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Reductor de Tamaño de Imágenes</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Herramienta Diseniada por Creative Ferrets para la reduccion del tamanio de las imagenes  sin perder calidad por carpeta, selecciona la carpeta y pronto se descargara un zip con las imagenes reducidas luego usa la herramienta para renombrar las imagenes.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:max-h-[10rem]">Herramienta Diseñada por Creative Ferrets para la reducción del tamaño de las imágenes sin perder calidad por carpeta. Selecciona la carpeta y pronto se descargará un zip con las imágenes reducidas. Luego, puedes usar la herramienta para renombrar las imágenes.</p>
+        <a href="{% url 'reductorImg' %}" class="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Usar Herramienta
             <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
