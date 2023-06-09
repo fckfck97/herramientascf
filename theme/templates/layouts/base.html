@@ -1,0 +1,22 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reductor y Renombrador de Imagenes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="{% static 'img/logo_nav.png' %}" type="image/x-icon">
+    {% tailwind_css %}
+</head>
+	{% include "layouts/partials/nav.html" %}
+	<body class="bg-gray-50 font-serif leading-normal tracking-normal">
+		<h1 class="text-5xl text-center my-4">{% block titulo %}{% endblock %}</h1>
+		<div class="container mx-auto h-screen items-center justify-center">
+			<section class="my-section flex justify-center items-center">
+				{% block content %}{% endblock %}
+			</section>
+		</div>
+	{% include "layouts/partials/footer.html" %}
+</body>
+</html>
