@@ -1,4 +1,4 @@
 Django==4.2.2
 numpy==1.24.3
 Pillow==9.5.0
-django-tailwind==3.5.0
+django-compressor==4.3.1

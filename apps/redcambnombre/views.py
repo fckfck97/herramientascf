@@ -10,7 +10,7 @@ import shutil
 from django.conf import settings
 
 class Inicio(View):
-    template_name = 'index/template.html'
+    template_name = 'index/index.html'
     
     def get(self, request):
         return render(request,self.template_name)

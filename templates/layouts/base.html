@@ -1,0 +1,28 @@
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Herramientas Creative Ferrets</title>
+        <link rel="shortcut icon" href="{% static 'img/logo.svg' %}" type="image/x-icon">
+        {% compress css %}
+        <link rel="stylesheet" href="{% static 'css/dist/styles.css' %}">
+        {% endcompress %}
+    </head>
+    <body>
+        {% include 'layouts/partials/nav.html' %}
+        <main class="main">
+        <div class=" flex flex-col items-center sm:justify-center">
+            <h1 class="text-5xl text-center my-10">{% block titulo %}{% endblock %}</h1>
+            {% block content %}
+            {% endblock content %}
+        </div>
+        </main>
+        {% include 'layouts/partials/footer.html' %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    </body>
+</html>

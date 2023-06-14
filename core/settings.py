@@ -26,8 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.redcambnombre',
-    'tailwind',
-    'theme',
+    'compressor',
     'django_browser_reload'
 ]
 
@@ -47,7 +46,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,12 +114,8 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-TAILWIND_APP_NAME = 'theme'
+COMPRESS_ROOT = BASE_DIR / 'static'
 
-TAILWIND_CSS_PATH = 'css/dist/styles.css'
+COMPRESS_ENABLED = True
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
-
-NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)

@@ -1,5 +1,8 @@
 db.sqlite3
 Pipfile
 Pipfile.lock
-theme/static
-theme/static_src
+package.json
+package-lock.json
+tailwind.config.js
+node_modules
+static/CACHE
